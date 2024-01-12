@@ -1,8 +1,6 @@
 ﻿namespace Algorithms.Structures;
-public class LinkedList
+public class LinkedList(int value)
 {
-    public int Value { get; set; }
+    public int Value { get; set; } = value;
     public LinkedList? Next { get; set; }
-
-    public LinkedList(int value) => Value = value;
 }

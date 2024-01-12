@@ -15,14 +15,14 @@ public static class SubarraySort
             }
         }
         if (smallestUnsorted == int.MaxValue)
-            return new int[] { -1, -1 };
+            return [-1, -1];
         var leftPtr = 0;
         var rightPtr = array.Length - 1;
         while (smallestUnsorted >= array[leftPtr])
             leftPtr++;
         while (highestUnsorted <= array[rightPtr])
             rightPtr--;
-        return new int[] { leftPtr, rightPtr };
+        return [leftPtr, rightPtr];
     }
 
     public static bool IsOutOfOrder(int i, int[] array)

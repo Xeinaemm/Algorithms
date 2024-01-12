@@ -20,15 +20,9 @@ public static class MaxPathSum
         return new TreeInfo(maxBranchSum, maxPathSum);
     }
 
-    public class TreeInfo
+    public class TreeInfo(int maxBranchSum = 0, int maxPathSum = int.MinValue)
     {
-        public int MaxBranchSum { get; private set; }
-        public int MaxPathSum { get; private set; }
-
-        public TreeInfo(int maxBranchSum = 0, int maxPathSum = int.MinValue)
-        {
-            MaxBranchSum = maxBranchSum;
-            MaxPathSum = maxPathSum;
-        }
+        public int MaxBranchSum { get; private set; } = maxBranchSum;
+        public int MaxPathSum { get; private set; } = maxPathSum;
     }
 }

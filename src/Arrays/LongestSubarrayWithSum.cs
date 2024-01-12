@@ -17,7 +17,7 @@ public static class LongestSubarrayWithSum
                 startingPtr++;
             }
             if (currentSum == targetSum && (result.Length == 0 || result[1] - result[0] < endingPtr - startingPtr))
-                result = new int[] { startingPtr, endingPtr };
+                result = [startingPtr, endingPtr];
             endingPtr++;
         }
         return result;

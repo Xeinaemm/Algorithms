@@ -4,15 +4,10 @@ namespace Algorithms.BinarySearchTrees;
 
 public static class BstKthLargestValue
 {
-    public class TreeInfo
+    public class TreeInfo(int visited, int latestValue)
     {
-        public int Visited { get; set; }
-        public int LatestValue { get; set; }
-        public TreeInfo(int visited, int latestValue)
-        {
-            Visited = visited;
-            LatestValue = latestValue;
-        }
+        public int Visited { get; set; } = visited;
+        public int LatestValue { get; set; } = latestValue;
     }
 
     // O(h + k) time | O(h) space

@@ -1,9 +1,7 @@
 ﻿namespace Algorithms.Heaps;
-public class MinHeap
+public class MinHeap(List<int> array)
 {
-    public List<int> Heap { get; }
-
-    public MinHeap(List<int> array) => Heap = BuildHeap(array);
+    public List<int> Heap { get; } = BuildHeap(array);
 
     // O(n) time | O(1) space
     public static List<int> BuildHeap(List<int> array)

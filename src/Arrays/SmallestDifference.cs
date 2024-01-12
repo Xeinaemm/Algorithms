@@ -19,13 +19,13 @@ public static class SmallestDifference
             else if (first > second)
                 ptrTwo++;
             else
-                return new int[] { first, second };
+                return [first, second];
 
             var newDistance = Math.Abs(first - second);
             if (newDistance < distance)
             {
                 distance = newDistance;
-                result = new int[] { first, second };
+                result = [first, second];
             }
         }
         return result;

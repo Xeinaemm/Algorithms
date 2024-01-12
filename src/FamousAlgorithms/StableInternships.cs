@@ -46,7 +46,7 @@ public static class StableInternships
         var index = 0;
         foreach (var chosenIntern in chosenInterns)
         {
-            matches[index] = new int[] { chosenIntern.Value, chosenIntern.Key };
+            matches[index] = [chosenIntern.Value, chosenIntern.Key];
             index++;
         }
         return matches;

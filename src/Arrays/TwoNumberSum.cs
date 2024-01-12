@@ -11,7 +11,7 @@ public static class TwoNumberSum
             var firstNumber = array[i];
             var containsSecondNumber = visited.TryGetValue(targetSum - firstNumber, out var secondNumber);
             if (containsSecondNumber)
-                return new int[] { firstNumber, secondNumber };
+                return [firstNumber, secondNumber];
             else
                 _ = visited.Add(firstNumber);
         }
@@ -30,7 +30,7 @@ public static class TwoNumberSum
             var rightNumber = array[rightPointer];
             var numbersSum = leftNumber + rightNumber;
             if (numbersSum == targetSum)
-                return new int[] { leftNumber, rightNumber };
+                return [leftNumber, rightNumber];
             if (numbersSum > targetSum)
                 rightPointer--;
             if (numbersSum < targetSum)

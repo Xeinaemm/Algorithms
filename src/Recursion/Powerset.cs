@@ -6,7 +6,7 @@ public static class Powerset
     {
         var subsets = new List<List<int>>
         {
-            new List<int>()
+            new()
         };
         foreach (var element in array)
         {

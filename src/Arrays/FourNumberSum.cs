@@ -15,7 +15,7 @@ public static class FourNumberSum
                 var diff = targetSum - currentSum;
                 if (pairSums.ContainsKey(diff))
                     foreach (var pair in pairSums[diff])
-                        result.Add(new int[] { pair[0], pair[1], array[i], array[j] });
+                        result.Add([pair[0], pair[1], array[i], array[j]]);
             }
             for (var k = 0; k < i; k++)
             {

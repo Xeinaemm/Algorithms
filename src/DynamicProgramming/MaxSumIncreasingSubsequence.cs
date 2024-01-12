@@ -30,8 +30,8 @@ public static class MaxSumIncreasingSubsequence
     {
         var sequence = new List<List<int>>
         {
-            new List<int>() { sums },
-            new List<int>()
+            new() { sums },
+            new()
         };
         while (currentIdx != int.MinValue)
         {

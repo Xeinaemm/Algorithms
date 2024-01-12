@@ -4,13 +4,11 @@ namespace Algorithms.BinarySearchTrees;
 
 public static class BstConstruction
 {
-    public class Bst
+    public class Bst(int value)
     {
-        public int Value { get; set; }
+        public int Value { get; set; } = value;
         public Bst? Left { get; set; }
         public Bst? Right { get; set; }
-
-        public Bst(int value) => Value = value;
 
         // Average: O(log(n)) time | O(1) space
         // Worst: O(n) time | O(1) space

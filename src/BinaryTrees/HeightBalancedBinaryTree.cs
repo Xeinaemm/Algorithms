@@ -24,14 +24,9 @@ public static class HeightBalancedBinaryTree
         return new TreeInfo(isBalanced, height);
     }
 
-    public class TreeInfo
+    public class TreeInfo(bool isBalanced, int height)
     {
-        public bool IsBalanced { get; set; }
-        public int Height { get; set; }
-        public TreeInfo(bool isBalanced, int height)
-        {
-            IsBalanced = isBalanced;
-            Height = height;
-        }
+        public bool IsBalanced { get; set; } = isBalanced;
+        public int Height { get; set; } = height;
     }
 }

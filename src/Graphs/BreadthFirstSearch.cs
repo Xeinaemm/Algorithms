@@ -2,12 +2,10 @@
 public class BreadthFirstSearch
 {
     // BFS requires a queue. Perform tasks on value, and then enqueues all children.
-    public class Node
+    public class Node(string name)
     {
-        public string Name { get; }
+        public string Name { get; } = name;
         public List<Node> Children { get; } = new();
-
-        public Node(string name) => Name = name;
 
         // O(v + e) time | O(v) space
         public List<string> BreadthFirstSearch(List<string> array)

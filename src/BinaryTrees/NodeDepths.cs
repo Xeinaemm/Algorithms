@@ -40,15 +40,9 @@ public class NodeDepths
         return depth + leftNode + rightNode;
     }
 
-    public class Node
+    public class Node(BinaryTree node, int depth)
     {
-        public int Depth { get; set; }
-        public BinaryTree InnerNode { get; set; }
-
-        public Node(BinaryTree node, int depth)
-        {
-            InnerNode = node;
-            Depth = depth;
-        }
+        public int Depth { get; set; } = depth;
+        public BinaryTree InnerNode { get; set; } = node;
     }
 }

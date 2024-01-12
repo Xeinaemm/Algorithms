@@ -3,10 +3,9 @@
 namespace Algorithms.BinarySearchTrees;
 public static class BstReconstruction
 {
-    public class TreeInfo
+    public class TreeInfo(int rootIdx)
     {
-        public int RootIdx { get; set; }
-        public TreeInfo(int rootIdx) => RootIdx = rootIdx;
+        public int RootIdx { get; set; } = rootIdx;
     }
 
     // O(n) time | O(n) space

@@ -9,7 +9,7 @@ public static class ValidStartingCity
         var minGas = 0;
         for (var i = 1; i < distances.Length; i++)
         {
-            milesLeft += mpg * fuel[i - 1] - distances[i - 1];
+            milesLeft += (mpg * fuel[i - 1]) - distances[i - 1];
             if (milesLeft < minGas)
             {
                 minGas = milesLeft;

@@ -28,7 +28,7 @@ public static class LargestRange
             if (currentDiff > diff)
             {
                 diff = currentDiff;
-                result = new int[] { lowestNumber + 1, highestNumber - 1 };
+                result = [lowestNumber + 1, highestNumber - 1];
             }
         }
         return result;

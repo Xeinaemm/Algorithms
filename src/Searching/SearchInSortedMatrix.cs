@@ -12,7 +12,7 @@ public static class SearchInSortedMatrix
             else if (matrix[startRow, startColumn] < target)
                 startRow++;
             else
-                return new int[] { startRow, startColumn };
-        return new int[] { -1, -1 };
+                return [startRow, startColumn];
+        return [-1, -1];
     }
 }

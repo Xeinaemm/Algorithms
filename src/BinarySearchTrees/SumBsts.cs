@@ -30,29 +30,19 @@ public static class SumBsts
         return new TreeInfo(isBst, minValue, maxValue, bstSum, bstSize, totalSum);
     }
 
-    public class TreeInfo
+    public class TreeInfo(
+        bool isBst = true,
+        int minValue = int.MaxValue,
+        int maxValue = int.MinValue,
+        int bstSum = 0,
+        int bstSize = 0,
+        int totalSum = 0)
     {
-        public bool IsBst { get; private set; }
-        public int MinValue { get; private set; }
-        public int MaxValue { get; private set; }
-        public int BstSum { get; private set; }
-        public int BstSize { get; private set; }
-        public int TotalSum { get; private set; }
-
-        public TreeInfo(
-            bool isBst = true,
-            int minValue = int.MaxValue,
-            int maxValue = int.MinValue,
-            int bstSum = 0,
-            int bstSize = 0,
-            int totalSum = 0)
-        {
-            IsBst = isBst;
-            MinValue = minValue;
-            MaxValue = maxValue;
-            BstSum = bstSum;
-            BstSize = bstSize;
-            TotalSum = totalSum;
-        }
+        public bool IsBst { get; private set; } = isBst;
+        public int MinValue { get; private set; } = minValue;
+        public int MaxValue { get; private set; } = maxValue;
+        public int BstSum { get; private set; } = bstSum;
+        public int BstSize { get; private set; } = bstSize;
+        public int TotalSum { get; private set; } = totalSum;
     }
 }

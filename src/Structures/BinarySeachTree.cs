@@ -1,9 +1,7 @@
 ﻿namespace Algorithms.Structures;
-public class BinarySeachTree
+public class BinarySeachTree(int value)
 {
-    public int Value { get; set; }
+    public int Value { get; set; } = value;
     public BinarySeachTree? Left { get; set; }
     public BinarySeachTree? Right { get; set; }
-
-    public BinarySeachTree(int value) => Value = value;
 }

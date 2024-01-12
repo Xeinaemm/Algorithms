@@ -2,12 +2,10 @@
 public class DepthFirstSearch
 {
     // O(v + e) time | O(v) space
-    public class Node
+    public class Node(string name)
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = name;
         public List<Node> Children { get; set; } = new();
-
-        public Node(string name) => Name = name;
 
         public List<string> DepthFirstSearch(List<string> array)
         {

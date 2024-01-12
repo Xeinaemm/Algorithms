@@ -12,7 +12,7 @@ public static class MinimumCharactersForWords
                 letterRanks[letter] = letterRanks.ContainsKey(letter) ? letterRanks[letter] + 1 : 1;
 
             foreach (var rank in letterRanks.Keys)
-                if (ranks.ContainsKey(rank) && letterRanks[rank] > ranks[rank] || !ranks.ContainsKey(rank))
+                if ((ranks.ContainsKey(rank) && letterRanks[rank] > ranks[rank]) || !ranks.ContainsKey(rank))
                     ranks[rank] = letterRanks[rank];
         }
         var result = new List<char>();

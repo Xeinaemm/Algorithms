@@ -38,16 +38,10 @@ public static class GetYoungestCommonAncestor
         }
         return lower;
     }
-    public class AncestralTree
+    public class AncestralTree(char name)
     {
-        public char Name { get; }
-        public AncestralTree? Ancestor { get; private set; }
-
-        public AncestralTree(char name)
-        {
-            Name = name;
-            Ancestor = null;
-        }
+        public char Name { get; } = name;
+        public AncestralTree? Ancestor { get; private set; } = null;
 
         // This method is for testing only.
         public void AddAsAncestor(AncestralTree[] descendants)

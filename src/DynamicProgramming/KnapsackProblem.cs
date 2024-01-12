@@ -22,11 +22,11 @@ public static class KnapsackProblem
     {
         var sequence = new List<List<int>>()
         {
-            new List<int>()
+            new()
             {
                 weight
             },
-            new List<int>()
+            new()
         };
         var i = values.GetLength(0) - 1;
         var c = values.GetLength(1) - 1;

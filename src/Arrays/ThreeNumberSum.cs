@@ -16,7 +16,7 @@ public static class ThreeNumberSum
                 var currentSum = array[i] + array[leftPtr] + array[rightPtr];
                 if (targetSum == currentSum)
                 {
-                    result.Add(new int[] { array[i], array[leftPtr], array[rightPtr] });
+                    result.Add([array[i], array[leftPtr], array[rightPtr]]);
                     rightPtr--;
                     leftPtr++;
                 }

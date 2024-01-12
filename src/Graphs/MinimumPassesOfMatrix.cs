@@ -34,7 +34,7 @@ public class MinimumPassesOfMatrix
             matrix[row][column] < 0)
         {
             matrix[row][column] *= -1;
-            queue.Enqueue(new int[] { row, column });
+            queue.Enqueue([row, column]);
         }
     }
 
@@ -53,7 +53,7 @@ public class MinimumPassesOfMatrix
         for (var row = 0; row < matrix.Length; row++)
             for (var column = 0; column < matrix[row].Length; column++)
                 if (matrix[row][column] > 0)
-                    queue.Enqueue(new int[] { row, column });
+                    queue.Enqueue([row, column]);
         return queue;
     }
 }

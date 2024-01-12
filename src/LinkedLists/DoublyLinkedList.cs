@@ -117,11 +117,9 @@ public class DoublyLinkedList
         node.Next = null;
     }
 }
-public class Node
+public class Node(int value)
 {
-    public int Value { get; }
+    public int Value { get; } = value;
     public Node? Prev { get; set; }
     public Node? Next { get; set; }
-
-    public Node(int value) => Value = value;
 }

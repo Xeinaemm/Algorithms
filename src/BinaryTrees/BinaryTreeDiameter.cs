@@ -23,14 +23,5 @@ public static class BinaryTreeDiameter
         return new TreeInfo(currentDiameter, currentHeight);
     }
 
-    public class TreeInfo
-    {
-        public int Diameter { get; set; }
-        public int Height { get; set; }
-        public TreeInfo(int diameter, int height)
-        {
-            Diameter = diameter;
-            Height = height;
-        }
-    }
+    public record TreeInfo(int Diameter, int Height);
 }

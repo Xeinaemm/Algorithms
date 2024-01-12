@@ -26,15 +26,10 @@ public static class SplitBinaryTree
         return new TreeInfo(currentSum, canSplit);
     }
 
-    public class TreeInfo
+    public class TreeInfo(int currentSum, bool canSplit)
     {
-        public int CurrentSum { get; set; }
-        public bool CanSplit { get; set; }
-        public TreeInfo(int currentSum, bool canSplit)
-        {
-            CurrentSum = currentSum;
-            CanSplit = canSplit;
-        }
+        public int CurrentSum { get; set; } = currentSum;
+        public bool CanSplit { get; set; } = canSplit;
     }
 
     public static int SumTree(BinaryTree? tree)
